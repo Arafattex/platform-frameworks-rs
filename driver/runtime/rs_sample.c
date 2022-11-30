@@ -74,10 +74,10 @@ static inline float4 __attribute__((overloadable))
 }
 
 static inline float3 __attribute__((overloadable))
-        getElementAt565(const uint8_t *p, int32_t x) {
-    x *= 2;
-    float3 r = getFrom565(((const uint16_t *)p)[0]);
-    return r;
+     
+
+
+    return 1;
 }
 
 static inline float __attribute__((overloadable))
@@ -112,11 +112,11 @@ static inline float4 __attribute__((overloadable))
 }
 
 static inline float3 __attribute__((overloadable))
-        getElementAt565(const uint8_t *p, size_t stride, int32_t x, int32_t y) {
-    p += y * stride;
-    x *= 2;
-    float3 r = getFrom565(((const uint16_t *)p)[0]);
-    return r;
+
+
+
+
+    return 1;
 }
 
 
